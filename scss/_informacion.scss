@@ -1,0 +1,226 @@
+.info-pag{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("../img/fondo-biblioteca.jpg");
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulos{
+    margin-top: 200px;
+    margin-right: 225px;
+}
+
+.container-slider{
+    max-width: 1000px;
+    height: 500px;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.container-pag-info{
+    width: 100%;
+    max-width: 800px;
+    height: 100vh;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 120%;
+    height: 100%;
+}
+
+
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    background-color: #1f110b;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+  
+  .logo-overlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3; // Ajusta el valor de opacidad según tus preferencias
+    z-index: -1;
+  }
+  
+  .logo-card {
+    width: 400px; // Ajusta el tamaño del logo según tus necesidades
+    height: 400px;
+  }
+  
+  .card-title {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); // Color de fondo con transparencia
+    padding: 10px; // Ajusta el espaciado interno del texto según tus necesidades
+
+    h3{
+        font-weight: bold;
+    }
+  }
+
+  .card-text{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+.info-pag {  
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 0.7fr 1.5fr 0.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aside titulos"
+      "aside container-slider"
+      "aside .";
+  }
+  
+  .container-slider { grid-area: container-slider; }
+  
+  .aside { grid-area: aside; }
+  
+  .titulos { grid-area: titulos; }
+  
+
+.aside{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    padding-left: 150px;
+    margin-top: 150px;
+    height: 65%;
+    background-color: inherit;
+
+    .aside-content{
+        position: relative;
+        right: 17%;
+        text-align: start;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+}
+
+.aside::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(247, 169, 0), rgb(223, 128, 5));
+    height: 140%;
+    margin: auto;
+    bottom: 2px;
+    top: 2px;
+    border-radius: 20px;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .aside::after {
+    content: '';
+    position: absolute;
+    background: #1f110b;
+    inset: 5px;
+    border-radius: 20px;
+    width: 95%;
+    margin-top: 300px;
+    margin: auto;
+    height: 97%;
+
+  } 
+
+  @media screen and (max-width:900px){
+
+
+    .info-pag{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "titulos"
+        "container-slider"
+        "aside"
+        ;
+    }
+
+    .titulos{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aside{
+        overflow: hidden;
+        height: 90%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grilla{
+        grid-auto-flow: column;
+    }
+
+  }
+
+  

@@ -1,0 +1,312 @@
+$font-family: 'Rubik', sans-serif;
+$font-size: 18px;
+$font-weight: normal;
+$text-color: #ffffff;
+$text-color-accent: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+@import 'header';
+
+@import 'nosotros';
+
+@import 'informacion';
+
+@import 'redes';
+
+
+.pag-principal {
+    height: 90vh;
+    flex: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(/img/fondito-cocina.jpg);
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo1 {
+    width: 60%;
+    margin: auto;
+    height: 100px;
+}
+
+.nosotros {
+    height: 80vh;
+    background-image: linear-gradient(to right, #562B1A 10%, #130905);
+}
+
+.platos {
+    padding-top: 50px;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(/img/fondito-burga.jpg);
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes {
+    padding-top: 65px;
+    height: 60vh;
+    background-image: linear-gradient(to right, #562B1A 10%, #130905);
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pag-principal p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+
+.gallery-wrap {
+
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    height: 60vh;
+}
+
+.caja-croniquero {
+
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+
+    a:hover {
+        opacity: 1;
+    }
+
+    .overlay {
+        display: flex;
+        opacity: 0;
+        text-decoration: none;
+        list-style-type: none;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s;
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    &:hover {
+        flex: 3.5;
+
+        .overlay {
+            opacity: 1;
+        }
+    }
+}
+
+
+.item-1 {
+    background-image: url("/img/joaco.jpg");
+}
+
+.item-2 {
+    background-image: url("/img/nico.jpg");
+}
+
+.item-3 {
+    background-image: url("/img/teo.jpg");
+}
+
+.item-4 {
+    background-image: url("/img/martin.jpg");
+}
+
+.item-5 {
+    background-image: url("/img/bruno.jpg");
+}
+
+.item-6 {
+    background-image: url("/img/leo.jpg");
+}
+
+.contenedor-comida {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+}
+
+.caja-comida {
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+    margin: 20px;
+    border: solid 5px rgb(255, 187, 0);
+
+    .overlay {
+        display: flex;
+        opacity: 0;
+        text-decoration: none;
+        list-style-type: none;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s;
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    a:hover {
+        opacity: 1;
+    }
+
+    &:hover {
+        .overlay {
+            opacity: 1;
+        }
+    }
+}
+
+.item2-1 {
+    background-image: url("/img/carnecita.jpg");
+}
+
+.item2-2 {
+    background-image: url("/img/burga.jpeg");
+}
+
+.item2-3 {
+    background-image: url("/img/empanadas.jpeg");
+}
+
+.contenedor-widgets {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+
+    .redes-boxes{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+
+        li {
+
+            margin: 0 35px;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+
+            a {
+                display: block;
+                background: rgb(255, 187, 0);
+                color: #562B1A;
+                line-height: 200px;
+                font-size: 100px;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+.footer{
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mi-formulario{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("../img/fondo-formulario.jpg");
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:900px) {
+
+
+    .btn{
+        margin-top: 50px;
+    }
+
+    .redes-boxes{
+        width: 700px;
+
+        li{
+
+            width: 150px;
+            height: 200px;
+
+             a{
+                 width: 150px;
+                 height: 200px;
+                 
+             }
+        }
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .pag-redes{
+        flex-direction: column;
+    }
+
+}
