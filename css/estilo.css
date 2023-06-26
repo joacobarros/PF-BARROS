@@ -123,7 +123,7 @@ nav {
         transform: rotate(555deg); }
 
 .nosotros-pag {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/fondo-madera.roble.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondo-madera.roble.jpg");
   background-position: center bottom;
   background-size: cover;
   height: 100vh;
@@ -396,7 +396,8 @@ input[type=radio] {
 .pag-principal {
   height: 90vh;
   flex: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/fondito-cocina.jpg");
+  background-image: ();
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/fondito-cocina.jpg);
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
