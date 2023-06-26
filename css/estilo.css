@@ -123,7 +123,7 @@ nav {
         transform: rotate(555deg); }
 
 .nosotros-pag {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondo-madera.roble.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/fondo-madera.roble.jpg");
   background-position: center bottom;
   background-size: cover;
   height: 100vh;
@@ -135,7 +135,9 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1.3fr 1.2fr 0.5fr;
   gap: 0px 0px;
-  grid-template-areas: "bloque-de-fotos biografia" "widget-redes biografia" ". ."; }
+  grid-template-areas: "bloque-de-fotos biografia"
+ "widget-redes biografia"
+ ". ."; }
 
 .bloque-de-fotos {
   grid-area: bloque-de-fotos; }
@@ -185,7 +187,9 @@ nav {
     height: 250%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "bloque-de-fotos" "widget-redes" "biografia"; }
+    grid-template-areas: "bloque-de-fotos"
+ "widget-redes"
+ "biografia"; }
   .bloque-de-fotos {
     grid-template-columns: repeat(2, 100px);
     grid-template-rows: repeat(2, 175px);
@@ -291,7 +295,9 @@ input[type=radio] {
   grid-template-rows: 0.7fr 1.5fr 0.8fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "aside titulos" "aside container-slider" "aside ."; }
+  grid-template-areas: "aside titulos"
+ "aside container-slider"
+ "aside ."; }
 
 .container-slider {
   grid-area: container-slider; }
@@ -355,7 +361,9 @@ input[type=radio] {
   .info-pag {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "titulos" "container-slider" "aside"; }
+    grid-template-areas: "titulos"
+ "container-slider"
+ "aside"; }
   .titulos {
     margin-left: auto;
     margin-right: auto; }
@@ -388,7 +396,7 @@ input[type=radio] {
 .pag-principal {
   height: 90vh;
   flex: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondito-cocina.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/fondito-cocina.jpg");
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -410,7 +418,7 @@ input[type=radio] {
 .platos {
   padding-top: 50px;
   height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondito-burga.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/fondito-burga.jpg");
   background-attachment: fixed;
   background-position: center bottom;
   background-repeat: no-repeat;
