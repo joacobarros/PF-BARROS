@@ -465,7 +465,7 @@ input[type=radio] {
     height: 100%;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: opacity 0.3s; }
+    transition: opacity 0.4s; }
     .caja-croniquero .overlay p {
       font-size: 30px; }
   .caja-croniquero:hover {
