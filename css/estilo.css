@@ -123,7 +123,7 @@ nav {
         transform: rotate(555deg); }
 
 .nosotros-pag {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondo-madera.roble.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondo-madera.roble.jpg);
   background-position: center bottom;
   background-size: cover;
   height: 100vh;
@@ -135,9 +135,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1.3fr 1.2fr 0.5fr;
   gap: 0px 0px;
-  grid-template-areas: "bloque-de-fotos biografia"
- "widget-redes biografia"
- ". ."; }
+  grid-template-areas: "bloque-de-fotos biografia" "widget-redes biografia" ". ."; }
 
 .bloque-de-fotos {
   grid-area: bloque-de-fotos; }
@@ -187,9 +185,7 @@ nav {
     height: 250%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "bloque-de-fotos"
- "widget-redes"
- "biografia"; }
+    grid-template-areas: "bloque-de-fotos" "widget-redes" "biografia"; }
   .bloque-de-fotos {
     grid-template-columns: repeat(2, 100px);
     grid-template-rows: repeat(2, 175px);
@@ -295,9 +291,7 @@ input[type=radio] {
   grid-template-rows: 0.7fr 1.5fr 0.8fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "aside titulos"
- "aside container-slider"
- "aside ."; }
+  grid-template-areas: "aside titulos" "aside container-slider" "aside ."; }
 
 .container-slider {
   grid-area: container-slider; }
@@ -361,9 +355,7 @@ input[type=radio] {
   .info-pag {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "titulos"
- "container-slider"
- "aside"; }
+    grid-template-areas: "titulos" "container-slider" "aside"; }
   .titulos {
     margin-left: auto;
     margin-right: auto; }
@@ -393,6 +385,23 @@ input[type=radio] {
     padding-left: 50px;
     margin-top: 150px; }
 
+.mi-formulario {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondo-formulario.jpg");
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .mi-formulario legend {
+    margin-top: 130px;
+    margin-bottom: 20px; }
+  .mi-formulario .form-item {
+    margin-top: 20px; }
+  .mi-formulario .comentarios {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
 .pag-principal {
   height: 90vh;
   flex: 1;
@@ -408,6 +417,7 @@ input[type=radio] {
 
 .parrafo1 {
   width: 60%;
+  overflow: hidden;
   margin: auto;
   height: 100px; }
 
@@ -418,6 +428,7 @@ input[type=radio] {
 .platos {
   padding-top: 50px;
   height: 80vh;
+  overflow: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondito-burga.jpg");
   background-attachment: fixed;
   background-position: center bottom;
@@ -442,6 +453,7 @@ input[type=radio] {
 
 .gallery-wrap {
   display: flex;
+  overflow: hidden;
   flex-direction: row;
   width: 80%;
   margin: auto;
@@ -465,7 +477,7 @@ input[type=radio] {
     height: 100%;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: opacity 0.4s; }
+    transition: opacity 0.3s; }
     .caja-croniquero .overlay p {
       font-size: 30px; }
   .caja-croniquero:hover {
@@ -564,13 +576,6 @@ input[type=radio] {
   text-align: center;
   display: flex;
   justify-content: space-around; }
-
-.mi-formulario {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondo-formulario.jpg");
-  background-attachment: fixed;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover; }
 
 @media screen and (max-width: 900px) {
   .btn {

@@ -19,8 +19,8 @@
     <header>
         <a href="../index.html">
             <div class="logo">
-              <img src="../img/logo del grupo png.png" alt="icono">
-              <h2 class="title">LCDB</h2> 
+              <img src="../img/logo del grupo png.png" alt="foto-icono">
+              <h1 class="title">LCDB</h1> 
             </div>
           </a>
           <nav class="custom-navbar navbar navbar-expand-lg ">
@@ -52,53 +52,52 @@
   <main>
 
       <form class="mi-formulario" action="">
-        <br><br><br><br><br><br>
-        <legend class="title">Formulario de contacto</legend>
+        
+        <legend class="title form">Formulario de contacto</legend>
         <div class="form-item">
-          <label class="form-label text-white" for="nombre">Escribe tu Nombre</label>
-          <input type="text" name="Nombre" placeholder="Juan">
+          <label class="form-label text-white" for="nombre">Nombre:</label>
+          <input type="text" name="Nombre" id="nombre" placeholder="Juan">
         </div>
-        <br>
+        
         <div class="form-item">
-          <label class="form-label text-white" for="apellido">Escribe tu Apellido</label>
-          <input type="text" name="Apeliido" placeholder="Perez">
+          <label class="form-label text-white" for="apellido">Apellido:</label>
+          <input type="text" name="Apellido" id="apellido" placeholder="Perez">
         </div>
-          <br>
+          
         <div class="form-item">
           <label class="form-label text-white" for="email">Email*:</label>
-          <input type="email" required name="Email" placeholder="juan@perez.com">
+          <input type="email" required name="Email" id="email" placeholder="juan@perez.com">
         </div>
-        <br>
+        
         <div class="form-item">
-           <label class="form-label text-white" for="pass">Password</label>
-           <input type="password">
+           <label class="form-label text-white" for="contraseña">Contraseña:</label>
+           <input type="password" id="contraseña">
         </div> 
-          <br>
+          
         <div class="form-item">
-          <label class="form-label text-white" for="Nacionalidad">Pais de Nacionalidad</label>
-          <select name="nacionalidad" id="">
+          <label class="form-label text-white" for="nacionalidad">Nacionalidad:</label>
+          <select name="Nacionalidad" id="nacionalidad">
             <option value="ARG">ARGENTINA</option>
             <option value="URU">URUGUAY</option>
             <option value="BRA">BRASIL</option>
             <option value="PAR">PARAGUAY</option>
           </select>
         </div>
-        <br>
-        <div class="form-item">
-          <label class="form-label text-white" for="comentarios" >Deja tu mensaje</label>
-          <br>
-          <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+        
+        <div class="form-item comentarios">
+          <label class="form-label text-white" for="comentarios" >Comentarios:</label>
+          <textarea name="Comentarios" id="comentarios" cols="30" rows="10"></textarea>
         </div>
+
         <div class="form-item">
           <label class="form-label text-white" for="condiciones">Acepta las condiciones</label>
-          <input type="checkbox" name="condic" id="">
+          <input type="checkbox" name="Condiciones" id="condiciones">
         </div>
-          <br>
+          
         <div class="form-item">
          <input type="submit" value="Enviar formulario">
          <input type="reset" value="Borrar formulario">
         </div>
-        <BR></BR><br>
       </form>
   
   </main> 
