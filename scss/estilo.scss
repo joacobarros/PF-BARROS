@@ -275,6 +275,14 @@ p {
 
 @media screen and (max-width:900px) {
 
+    .navbar-nav-mobile{
+        flex-direction: row;
+    }
+
+    .navbar-nav-mobile .nav-item {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
 
     .btn{
         margin-top: 50px;
